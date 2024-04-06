@@ -63,10 +63,10 @@
                     <div class="button-list pull-right m-t-15 m-l-10">  
 
                             
-                        <button id="settings" type="button"  class="btn btn-warning waves-effect waves-light p_five" onclick="storage.set('zoom', require('electron').webFrame.getZoomFactor() + 0.1); require('electron').webFrame.setZoomFactor(require('electron').webFrame.getZoomFactor() + 0.1);">
+                        <button id="zoom-in" type="button"  class="btn btn-warning waves-effect waves-light p_five" onclick="storage.set('zoom', require('electron').webFrame.getZoomFactor() + 0.1); require('electron').webFrame.setZoomFactor(require('electron').webFrame.getZoomFactor() + 0.1);">
                             <i class="glyphicon glyphicon-zoom-in"></i>
                         </button>
-                        <button id="settings" type="button"  class="btn btn-warning waves-effect waves-light p_five" onclick="storage.set('zoom', require('electron').webFrame.getZoomFactor() - 0.1); require('electron').webFrame.setZoomFactor(require('electron').webFrame.getZoomFactor() - 0.1);" style="margin-left: 0;">
+                        <button id="zoom-out" type="button"  class="btn btn-warning waves-effect waves-light p_five" onclick="storage.set('zoom', require('electron').webFrame.getZoomFactor() - 0.1); require('electron').webFrame.setZoomFactor(require('electron').webFrame.getZoomFactor() - 0.1);" style="margin-left: 0;">
                             <i class="glyphicon glyphicon-zoom-out"></i>
                         </button>
 
