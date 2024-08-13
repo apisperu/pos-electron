@@ -1761,11 +1761,15 @@ if (auth == undefined) {
                     products.forEach(pro => {
                         pro = pro.doc;
                         if (pro.barcode) {
-                            $("#" + pro._id + "").JsBarcode(pro.barcode, {
-                                width: 2,
-                                height: 25,
-                                fontSize: 14
-                            });
+                            try {
+                                $("#" + pro._id + "").JsBarcode(pro.barcode, {
+                                    width: 2,
+                                    height: 25,
+                                    fontSize: 14
+                                });
+                            } catch (error) {
+                                alert('Hay un error con el código de barras del producto: ' + pro.name);
+                            }
                         }
                     });
 
